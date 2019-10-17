@@ -1,12 +1,12 @@
 :root {
-    --light-gray: #DADCE0;
-    --blue-gray: #f2f5f8;
-    --light-blue: #1B9CE2;
+  --light-gray: #dadce0;
+  --blue-gray: #f2f5f8;
+  --light-blue: #1b9ce2;
 }
 
 body {
-    background-color: var(--blue-gray);
-    margin: 0;
+  background-color: var(--blue-gray);
+  margin: 0;
 }
 
 #repos-form {
@@ -83,28 +83,33 @@ body {
 }
 
 #list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0 20px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 20px;
+  box-sizing: border-box;
 }
 #list li {
-    padding: 25px 20px;
-    background-color: white;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    margin: 15px 0;
-    border-radius: 3px;
-    transition: opacity 150ms ease-out;
-    opacity: 0.85;
+  padding: 25px 20px;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  border-radius: 3px;
+  transition: opacity 150ms ease-out;
+  opacity: 0.85;
 }
 #list li:hover {
-    opacity: 1;
+  opacity: 1;
 }
 #list h2 {
-    margin-top: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #list p {
-    color: #333;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #list a {
-    text-decoration: none;
+  text-decoration: none;
 }
